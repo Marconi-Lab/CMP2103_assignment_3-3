@@ -2,11 +2,37 @@
 #include "main.h"
 #include<cmath>
 
-int main(){
+int main()
+{
+    //For value; 1012.22;                                               Expected output
+    double value_1 = 1012.22;
+    double value_2 = 152666.52;
+    double value_3 = 0.58;
+    double value_4 = 3120.13;
 
-std::cout<<"Areas given 10 is: "<<area(radius(10))<<std::endl;   //Answer is 15.9155
-std::cout<<"Areas given 0.6 is: "<<area(radius(0.6))<<std::endl; //Answer is 0.0572958
-std::cout<<"Areas given 19.6 is: "<<area(radius(19.6))<<std::endl; //Answer is 61.141
+    std::cout<<count_digits(value_1)<<std::endl;                          //      4
+    std::cout<<extract_decimal(value_1)<<std::endl;                       //      22
+    std::cout<<sum_of_digits(extract_decimal(value_1))<<std::endl;        //      4
+    std::cout<<is_valid(value_1)<<std::endl;                              //      1
+//###########################################################
+    //For value; 152666.52
+    std::cout<<"#########################"<<std::endl;
+    std::cout<<count_digits(value_2)<<std::endl;                          //    6
+    std::cout<<extract_decimal(value_2)<<std::endl;                       //    52
+    std::cout<<sum_of_digits(extract_decimal(value_2))<<std::endl;        //    7
+    std::cout<<is_valid(value_2)<<std::endl;                              //    0
 
+    std::cout<<"#########################"<<std::endl;
+    std::cout<<count_digits(value_3)<<std::endl;                          //    6
+    std::cout<<extract_decimal(value_3)<<std::endl;                       //    52
+    std::cout<<sum_of_digits(extract_decimal(value_3))<<std::endl;        //    7
+    std::cout<<is_valid(value_3)<<std::endl;                              //    0
+
+    std::cout<<"#########################"<<std::endl;
+    std::cout<<count_digits(value_4)<<std::endl;                          //    6
+    std::cout<<extract_decimal(value_4)<<std::endl;                       //    52
+    std::cout<<sum_of_digits(extract_decimal(value_4))<<std::endl;        //    7
+    std::cout<<is_valid(value_4)<<std::endl;                              //    0
+    return 0;
 }
 

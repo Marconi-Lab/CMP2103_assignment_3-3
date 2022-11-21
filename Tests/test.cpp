@@ -2,9 +2,10 @@
 #include "catch.hpp"
 #include "../main.h"
 
+double value_t1 = 1234.56;
 
 TEST_CASE( "Tests_1", "Tests" ) {
-    REQUIRE( area(radius(0)) == 0);
+    REQUIRE( is_valid(value_t1) == 0);
 }
 
 

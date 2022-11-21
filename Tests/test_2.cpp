@@ -2,7 +2,8 @@
 #include "catch.hpp"
 #include "../main.h"
 
-TEST_CASE( "Tests_2", "Tests" ) {
-    REQUIRE( (area(radius(3.141593)) - 1.5708) < 1e-3);
-}
+double value_t1 = 1789895.61;
 
+TEST_CASE( "Tests_1", "Tests" ) {
+    REQUIRE( is_valid(value_t1) == 1);
+}
