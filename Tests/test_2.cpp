@@ -3,7 +3,12 @@
 #include "../main.h"
 
 double value_t1 = 1789895.61;
+double value_t2 = 1234.56;
 
 TEST_CASE( "Tests_1", "Tests" ) {
-    REQUIRE( is_valid(value_t1) == 1);
+    REQUIRE( extract_decimal(value_t1) == 61);
+}
+
+TEST_CASE( "Tests_2", "Tests" ) {
+    REQUIRE( extract_decimal(value_t2) == 56);
 }
