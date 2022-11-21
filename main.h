@@ -8,35 +8,23 @@
 //using namespace std;
 
 int count_digits(double num){
-int wh_num = static_cast<int>(num);
-std::string val = std::to_string(wh_num);
-return val.length();
+   // put your code here
 }
 
 
 int extract_decimal(double num){
-    double d = num - static_cast<int>(num);
-
-    d = d*100 + 0.1;
-
-    return static_cast<int>(d);
+    // put your code here
 }
 
 int sum_of_digits(int numb){
-    int sum=0;
-while(numb>0){
-    int m = numb%10;
-    sum = sum + m;
-    numb = numb/10;
-}
-return sum;
+// put your code here
 }
 
 bool is_valid(double value){
-    int digits_count = count_digits(value);
-    int decimal_value = extract_decimal(value);
-    int digits_sum = sum_of_digits(decimal_value);
+    // call digits_count here and store output
+    // call extract_decimal here and store output
+    // call sum_of_digits here and store output
 
-    return digits_sum == digits_count;
+    // compare output of sum_of_digits and digits_count here
 }
 #endif // MAIN_H
