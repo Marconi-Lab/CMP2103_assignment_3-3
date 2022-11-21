@@ -1,5 +1,5 @@
 ### Description:
-A survey was carried out to find out the average age of dogs in a given town. The records are made in the format; \
+A survey was carried out to record the ages of dogs in a given town. The records are made in the format; \
 ### **14571259254.83**
 - where the number 14571259254 represents 11 age entries of the dogs in the town and the number 83 captures 2 entries representing the number of male and female dogs in that town.\
 - In the entries made, some are valid and others are invalid. \
